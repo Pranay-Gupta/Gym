@@ -1,0 +1,345 @@
+/* CSS Reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.p-text{
+    font-family: 'Playfair Display', serif;
+}
+.s-text{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* NAV CSS */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    margin-top: 20px;
+   
+
+}
+#logo{
+    position: absolute;
+    left:10%;
+    color: white;
+    font-size: 30px;
+}
+.color{
+    background-image: linear-gradient(to bottom right, rgb(74, 255, 255), rgb(11, 102, 49));
+}
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 30em;
+    
+}
+#navbar ul li{
+    list-style: none;
+    margin: 0 8%;
+   
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    
+}
+
+/* Adding text gradient */
+#navbar a:hover{
+    font-size: 23px;
+    background-image: linear-gradient(to bottom right, rgb(46, 236, 236), rgb(2, 252, 127));
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* Section CSS */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+   
+}
+/* Caraousal CSS */
+.carousal{
+    position: relative;
+    width: 100%;
+}
+
+.slides{
+    display: none;
+    z-index: -100;
+}
+
+.slides img{
+   height: 80vh;
+   width: 100%;
+   
+}
+.textMove{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    height: 25%;
+    width: 100%;
+}
+
+.text{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+ 
+}
+.fade{
+    animation: fadeAnim 3s ease;
+}
+@keyframes fadeAnim
+{
+    0%{
+        opacity: 0.4;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+.next,.previous{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 45%;
+    padding: 1%;
+    border-radius: 12px;
+}
+.next{
+    right: 0;
+    margin-right: 5%;
+}
+.next:hover{
+    background-image: linear-gradient(to bottom right, rgb(46, 236, 236), rgb(2, 252, 127));
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+.previous{ 
+    margin-left: 5%;
+}
+.previous:hover{
+    background-image: linear-gradient(to bottom right, rgb(46, 236, 236), rgb(2, 252, 127));
+    cursor: pointer;
+    opacity: 0.8;
+   
+    
+}
+.btn{
+    
+     background-image: linear-gradient(to bottom right, rgb(74, 255, 255), rgb(11, 102, 49));
+     cursor: pointer;
+     border: none;
+     color: white;
+     font-size: 18px;
+     padding: 6px;
+     border-radius: 50px;
+     height: 30%;
+     
+}
+.btn:hover{
+   
+    background-image: linear-gradient(to bottom right, rgb(46, 236, 236), rgb(2, 252, 127));
+    
+}
+.slides .btn{
+    position: absolute;
+   
+    bottom: 26%;
+    height: 24%;
+    width: 8%;
+} 
+.circleDiv{
+    
+    display: flex;
+    width: 7%;
+    height: 23px;
+    justify-content: space-evenly;
+    align-items: center;
+     position: absolute;
+    bottom: 25%;
+    left: 46.5%;
+} 
+.circle
+{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.active{
+    background-image: linear-gradient(to bottom right, rgb(46, 236, 236), rgb(2, 252, 127));
+}
+
+.circle:hover
+{
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    opacity: 0.6;
+}
+/* Cards CSS */
+.cardDiv
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 60vw;
+    z-index: 20;
+    position: absolute;
+    top: 38%;
+}
+.card
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color:white;
+}
+.cardDiv h3{
+    padding: 12%;
+    font-size: 27px;
+}
+.cardDiv p{
+   
+    font-size: 20px;
+}
+#card1::before{
+    content: "";
+    background:url('../images/bodybuilding.jpg') no-repeat center center/cover ;
+   
+    position: absolute;
+   
+    height: 100%;
+    width: 33.33%; 
+    z-index: -1;
+}
+#card2::before{
+    content: "";
+    background:url('../images/arobics.jpg') no-repeat center center/cover ;
+    
+    position: absolute;
+   
+    height: 100%;
+    width: 33.33%; 
+    z-index: -1;
+}
+
+#card3::before{
+    content: "";
+    background:url('../images/yoga.jpg') no-repeat center center/cover ;
+    
+    position: absolute;
+   
+    height: 100%;
+    width: 33.33%; 
+    z-index: -1;
+}
+/* Class details css  */
+#description{
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#description h2{
+    color: black;
+    font-size: 45px;
+}
+#description p{
+    color: black;
+    font-size: 25px;
+    margin-top: 6%;
+}
+
+.cardDes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 70vw;
+    margin: 5%;
+ 
+}
+.cdDes
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 2%;
+    padding: 2.6% ;
+    background-color: rgb(235, 240, 239);
+    text-align: center;
+}
+.cdDes p{
+    margin-top:20%;
+}
+/* footer CSS */
+footer::before{
+    content: "";
+    background:url('../images/1.jpg') no-repeat center center/cover ;
+    position: absolute; 
+    height: 33%;
+    width: 100%; 
+    z-index: -1;
+   
+}
+/* Subscription CSS */
+ #news{
+     margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+ }
+#news h3{
+    color: white;
+    font-size: 35px;
+    margin-top: 4%;
+}
+#news p{
+    color: white;
+    font-size: 20px;
+    margin: 1%;
+    font-size: 23px;
+}
+#news input{
+    margin-top: 2%;
+    padding: 5px;
+    width: 55%;
+    font-size: 18px;
+    text-align: center;
+   
+}
+
+#news button{
+  width:39%;
+}

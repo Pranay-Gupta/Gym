@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay's website</title>
+     <!-- Linking the css file -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Primary text  -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <!-- Secondary Text  -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div id="logo" class="fade">
+            <span class="s-text">Fit</span> <span class="color s-text">World</span>
+        </div>
+        <div id="navbar" class="p-text">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <section>
+        <!-- Carousal Structure -->
+
+        <div class="carousal">
+            <!-- Slides Structure -->
+            <div class="slides fade">
+                <img src="./images/1.jpg">
+                <div class="textMove">
+                    <div class="text s-text">All progress takes place outside the comfort zone</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img class="image fade" src="./images/3.jpg">
+                <div class="textMove">
+                    <div class="text s-text">The difference between the impossible and the possible lies in a person’s
+                        determination</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img class="image" src="./images/4.jpg">
+                <div class="textMove">
+                    <div class="text s-text">Nothing will work unless you do</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img class="image" src="./images/6.jpg">
+                <div class="textMove">
+                    <div class="text s-text">Don’t count the days, make the days count</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <!-- Next and Previous buttons -->
+            <div class="next" onclick="newIndex(1)">
+                &#10095;
+            </div>
+            <div class="previous" onclick="newIndex(-1)">
+                &#10094;
+            </div>
+
+
+            <!-- Circles Structure -->
+            <div class="circleDiv">
+                <div class="circle" onclick="index(1)"></div>
+                <div class="circle" onclick="index(2)"></div>
+                <div class="circle" onclick="index(3)"></div>
+                <div class="circle" onclick="index(4)"></div>
+            </div>
+        </div>
+        <!-- Cards for the classes  -->
+        <div class="cardDiv">
+            <div id="card1" class="card">
+
+                <h3 class="s-text">BODY BUILDING</h3>
+                <p class="p-text">This is the section of bodybuilding</p>
+            </div>
+            <div id="card2" class="card">
+                <h3 class="s-text"> AEROBICS CLASSES</h3>
+                <p class="p-text">This is the section of aerobics</p>
+            </div>
+            <div id="card3" class="card">
+                <h3 class="s-text">YOGA PROGRAM</h3>
+                <p class="p-text">This is the section of yoga</p>
+            </div>
+        </div>
+
+        <div id="description">
+            <h2 class="s-text">BEING FIT IS ATTRACTIVE</h2>
+            <p class="p-text">Training gives us an outlet for suppressed energies created by stress and thus tones the spirit just as
+                exercise conditions the body</p>
+        </div>
+
+        <div class="cardDes">
+            <div class="cdDes">
+
+                <h3 class="s-text">CARDIO PROGRAM</h3>
+                <p class="p-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            </div>
+            <div class="cdDes">
+                <h3 class="s-text">BODY BUILDING</h3>
+                <p class="p-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            </div>
+            <div class="cdDes">
+                <h3 class="s-text">KARATE CLASSES</h3>
+                <p class="p-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            </div>
+            <div class="cdDes">
+                <h3 class="s-text">YOGA PROGRAM</h3>
+                <p class="p-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            </div>
+            <div class="cdDes">
+                <h3 class="s-text">BOXING PROGRAM</h3>
+                <p class="p-text">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            </div>
+        </div>
+        <div class="carousal">
+            <!-- Slides Structure -->
+            <div class="slides fade">
+                <img src="./images/1.jpg">
+                <div class="textMove">
+                    <div class="text s-text">All progress takes place outside the comfort zone</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img class="image fade" src="./images/3.jpg">
+                <div class="textMove">
+                    <div class="text s-text">The difference between the impossible and the possible lies in a person’s
+                        determination</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img class="image" src="./images/4.jpg">
+                <div class="textMove">
+                    <div class="text s-text">Nothing will work unless you do</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <div class="slides fade">
+                <img class="image" src="./images/6.jpg">
+                <div class="textMove">
+                    <div class="text s-text">Don’t count the days, make the days count</div>
+                    <button class="btn p-text">Join</button>
+                </div>
+            </div>
+            <!-- Next and Previous buttons -->
+            <div class="next" onclick="newIndex(1)">
+                &#10095;
+            </div>
+            <div class="previous" onclick="newIndex(-1)">
+                &#10094;
+            </div>
+
+
+            <!-- Circles Structure -->
+            <div class="circleDiv">
+                <div class="circle" onclick="index(1)"></div>
+                <div class="circle" onclick="index(2)"></div>
+                <div class="circle" onclick="index(3)"></div>
+                <div class="circle" onclick="index(4)"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Subscription Part -->
+       <div id="news">
+        <h3 class="s-text">SUBSCRIBE NEWSLETTER</h3>
+        <p class="p-text">Subscribe our newsletter and get latest update</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your email " class="p-text">
+            <button class="btn p-text">SUBSCRIBE</button>
+        </form>
+       </div> 
+
+    </footer>
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>
